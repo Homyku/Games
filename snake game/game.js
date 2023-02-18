@@ -8,9 +8,9 @@ var scoreElement = document.getElementById("score");
 
 
 var snake = {
-  x: 10,
-  y: 10,
-  dx: 10,
+  x: 20,
+  y: 20,
+  dx: 20,
   dy: 0,
   cells: []
 };
@@ -58,7 +58,7 @@ function moveSnake(){
 
 
   // if snake crash into wall
-  if (snake.x < 0 || snake.x > canvas.width - 10 || snake.y < 0 || snake.y > canvas.height - 10) {
+  if (snake.x < 0 || snake.x > canvas.width - 20 || snake.y < 0 || snake.y > canvas.height - 20) {
     // stop the game
     clearInterval(gameInterval);
     alert("Game over! Your score is: " + score);
@@ -78,12 +78,12 @@ function moveSnake(){
   
   // draw food
   ctx.fillStyle = "red";
-  ctx.fillRect(food.x, food.y, 10, 10);
+  ctx.fillRect(food.x, food.y, 20, 20);
 
   // draw snake
   ctx.fillStyle = "rgba(227, 61, 148, 1)";
   for (var i = 0; i < snake.cells.length; i++) {
-    ctx.fillRect(snake.cells[i].x, snake.cells[i].y, 10, 10);
+    ctx.fillRect(snake.cells[i].x, snake.cells[i].y, 20, 20);
   }
 }
 
@@ -91,8 +91,8 @@ function moveSnake(){
 function generateFood() {
 
     // random food position generator
-  food.x = Math.floor(Math.random() * (canvas.width / 10)) * 10;
-  food.y = Math.floor(Math.random() * (canvas.height / 10)) * 10;
+  food.x = Math.floor(Math.random() * (canvas.width / 20)) * 20;
+  food.y = Math.floor(Math.random() * (canvas.height / 20)) * 20;
 
   // check if food isn't generated on snake body
   for (var i = 0; i < snake.cells.length; i++) {
@@ -107,17 +107,17 @@ function generateFood() {
 // keybord
 document.addEventListener("keydown", function(event) {
     if (event.keyCode === 37 && snake.dx === 0  ) {
-      snake.dx = -10;
+      snake.dx = -20;
       snake.dy = 0;
     } else if (event.keyCode === 38 && snake.dy === 0) {
       snake.dx = 0;
-      snake.dy = -10;
+      snake.dy = -20;
     } else if (event.keyCode === 39 && snake.dx === 0) {
-      snake.dx = 10;
+      snake.dx = 20;
       snake.dy = 0;
     } else if (event.keyCode === 40 && snake.dy === 0) {
       snake.dx = 0;
-      snake.dy = 10;
+      snake.dy = 20;
     }
   });
 
