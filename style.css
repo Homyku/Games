@@ -51,4 +51,9 @@
     animation: rotBGimg 3.5s linear infinite;
   }
   
+ .main{
+  margin: auto;
+  width: 50%;
+ }
+
  
