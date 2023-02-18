@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(145, 233, 255);
+    background-image: url('snake.png');
+  }
+
+  #canvas {
+    border: 2px solid black;
+    background-image: url('sand.jpeg');
+    position: fixed;
+
+  }
+
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    padding: 20px;
+  }
+  

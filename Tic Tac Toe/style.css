@@ -1,0 +1,67 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 580px;
+    height: 580px;
+    margin: 0 auto;
+    
+  }
+  
+  .square {
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    font-size: 220px;
+    padding-top: 50px;
+    text-align:center;
+    font: bolder;
+    font-family:monospace;
+    line-height: 100px;
+    cursor: pointer;
+    background: rgb(191,191,191);
+    background: radial-gradient(circle, rgb(89, 107, 65) 0%, rgb(126, 154, 85) 100%);
+    border-radius: 10px;
+    color: #223726;
+    text-shadow: -12px 0 #415144;
+  }
+  
+  .square:hover {
+    background-color: rgb(42, 62, 39);
+  }
+  
+  #restart {
+    display: block;
+    margin: 20px auto;
+    padding-top: 150px;
+  }
+  
+  body{
+    background-color: black;
+    background-image: url('soldiers.png');
+  }
+
+  button {
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    font-family:monospace;
+    border-radius: 0.5em;
+    background: #f4f1f1;
+    background-image: url('blood.png');
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #415144,
+               -6px -6px 12px #464e45;
+  }
+  
+  button:hover {
+    border: 1px solid rgb(27, 49, 30);
+  }
+  
+  button:active {
+    box-shadow: 4px 4px 12px #c5c5c5,
+               -4px -4px 12px #ffffff;
+  }
+
+
+  
