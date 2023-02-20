@@ -17,8 +17,6 @@
     transition-duration: 500ms;
   }
  
-  
-
 
   .box h2 {
     z-index: 1;
@@ -66,34 +64,7 @@
     transition-duration: 500ms;
 
   }
-/*  .main{
-  margin: auto;
-  width: 50%;
-  position: center;
-  left: 50%;
- } */
 
- /* .gameChoose{
-  padding: 50px;
-  width: 50%;
-  max-width: 500px;
-  place-content: center;
-  max-height: 80px;
-  justify-content: center;
-  display: flex;
-  margin: auto;
-  border-radius: 70px;
-background: #022337;
-box-shadow: inset 47px 47px 94px #011623,
-            inset -47px -47px 94px #03304b;
- }
-
- .gameChoose h2{
-  font-size: 50px;
-  text-decoration: none;
-  font-family: monospace;
- }
- */
  a:visited {
   color: inherit;
   text-decoration: none;
